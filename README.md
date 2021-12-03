@@ -1,36 +1,6 @@
 # ScrollViewIfNeeded
 A SwiftUI ScrollView that only scrolls if the content doesn't fit in the View
 
-## Example
-
-![Example](./example.png?raw=true)
-```swift
-WrappingHStack {
-    Text("WrappingHStack")
-        .padding()
-        .font(.title)
-        .border(Color.black)
-    
-    Text("can handle different element types")
-    
-    Image(systemName: "scribble")
-        .font(.title)
-        .frame(width: 200, height: 20)
-        .background(Color.purple)
-    
-    Text("and loop")
-        .bold()
-    
-    WrappingHStack(1...20, id:\.self) {
-        Text("Item: \($0)")
-            .padding(3)
-            .background(Rectangle().stroke())
-    }.frame(minWidth: 250)
-}
-.padding()
-.border(Color.black)
-```
-
 ## Installation
 Requirements iOS 13+
 
