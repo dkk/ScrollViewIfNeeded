@@ -12,7 +12,7 @@ Requirements iOS 13+
 
 ### Add as dependency to another package
 ```swift
-.package(url: "https://github.com/dkk/WrappingHStack", .upToNextMajor(from: "2.0.0"))
+.package(url: "https://github.com/dkk/ScrollViewIfNeeded", .upToNextMajor(from: "2.0.0"))
 ```
 
 ### Manual installation
@@ -21,7 +21,7 @@ Copy `/Sources/ScrollViewIfNeeded/ScrollViewIfNeeded.swift` into your project
 
 ## Usage
 
-Import the WrappingHStack package to your view:
+Import the ScrollViewIfNeeded package to your view:
 ```swift
 import ScrollViewIfNeeded
 ```
