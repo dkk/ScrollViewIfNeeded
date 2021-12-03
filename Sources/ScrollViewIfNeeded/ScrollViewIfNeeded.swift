@@ -22,7 +22,7 @@
 
 import SwiftUI
 
-struct ScrollViewIfNeeded<Content>: View where Content : View {
+public struct ScrollViewIfNeeded<Content>: View where Content : View {
     /// The scroll view's content.
     public var content: Content
 
@@ -63,7 +63,7 @@ struct ScrollViewIfNeeded<Content>: View where Content : View {
         axes.intersection((fitsVertically ? [] : Axis.Set.vertical).union(fitsHorizontally ? [] : Axis.Set.horizontal))
     }
 
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometryReader in
             ScrollView(activeScrollingDirections, showsIndicators: showsIndicators) {
                 content
