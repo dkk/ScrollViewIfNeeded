@@ -77,6 +77,8 @@ public struct ScrollViewIfNeeded<Content>: View where Content : View {
                             )
                         }
                     )
+                    .frame(minWidth: geometryReader.size.width, minHeight: geometryReader.size.height)
+
             }
             .onPreferenceChange(ViewSizeKey.self) {
                 fitsVertically = $0.height <= geometryReader.size.height
