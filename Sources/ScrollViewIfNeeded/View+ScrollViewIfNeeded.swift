@@ -55,3 +55,16 @@ public extension View {
     }
 }
 
+struct ScrollViewIfNeededViewModifier_Previews: PreviewProvider {
+    static var previews: some View {
+        HStack {
+            ForEach(1...50, id: \.self) {
+                Text("\($0)")
+                    .frame(width: 30, height: 30 * CGFloat($0))
+                    .background(Color.blue)
+            }
+        }
+        .makeScrollableIfNeeded([.horizontal, .vertical])
+    }
+}
+

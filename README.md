@@ -33,11 +33,17 @@ ScrollViewIfNeeded {
 }
 ```
 
-or configure it the same way you would configure `ScrollView`:
+configure it the same way you would configure `ScrollView`:
 ```swift
 ScrollViewIfNeeded(.horizontal, showsIndicators: false) {
     /* your content */
 }
+```
+
+or use it as a ViewModifier:
+```swift
+/* your view */
+    .makeScrollableIfNeeded(.horizontal)
 ```
 
 ## Contribute
